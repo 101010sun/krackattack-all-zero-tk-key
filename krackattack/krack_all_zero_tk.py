@@ -8,7 +8,7 @@
 
 import sys, os
 username = os.path.expanduser(os.environ["SUDO_USER"])
-sys.path.append('/home/' + username + '/.local/lib/python2.7/site-packages')
+sys.path.append('/root/.local/lib/python3.10/site-packages')
 
 import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
