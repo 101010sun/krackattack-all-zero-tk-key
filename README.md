@@ -64,3 +64,16 @@ Then **disable hardware encryption** using the script ./disable-hwcrypto.sh. It'
  
  The following link contains a video that demonstrate this attack: [demostration video](https://www.youtube.com/watch?v=Jq6rPCSuv4o)
  
+** Some issues
+After pip install mitm_channel_based, an error: no module named 'log_messages' showes.
+
+1. go to /home/<username>/lib/python3.10/site-packages/mitm_channel_based/
+2. modify the <all.py>, change the script like below
+
+```
+from mitm_channel_based.log_messages import *
+from mitm_channel_based.mitm_code import *
+...
+```
+
+3. other same issues deal like this way.
