@@ -6,8 +6,7 @@
 # This code may be distributed under the terms of the BSD license.
 # See README for more details.
 
-import sys, os
-username = os.path.expanduser(os.environ["SUDO_USER"])
+import sys
 sys.path.append('/root/.local/lib/python3.10/site-packages')
 
 import logging
